@@ -20,6 +20,12 @@ But at a colleague’s suggestion, Frankle decided to see what lessons it might 
 
 Song Han, now an assistant professor at MIT, was one pioneer. Building on a series of influential papers, Han unveiled a pruning algorithm he called AMC, or AutoML for model compression, that’s still the industry standard. Under Han’s technique, redundant neurons and connections are automatically removed, and the model is retrained to restore its initial accuracy. 
 
+
+
+
+
+
+[출처: https://news.mit.edu/2020/foolproof-way-shrink-deep-learning-models-0430]
 In response to Han’s work, Frankle recently suggested in an unpublished paper that results could be further improved by rewinding the smaller, pruned model to its initial parameters, or weights, and retraining the smaller model at its faster, initial rate. 
 
 In the current ICLR study, the researchers realized that the model could simply be rewound to its early training rate without fiddling with any parameters. In any pruning regimen, the tinier a model gets, the less accurate it becomes. But when the researchers compared this new method to Han’s AMC or Frankle’s weight-rewinding methods, it performed better no matter how much the model shrank. 
